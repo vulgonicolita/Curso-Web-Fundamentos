@@ -1,0 +1,124 @@
+body{ 
+    font-family: Arial sans-serif;
+    background: #ccc;
+    margin: 0;/*Por padrão o body ja aplica uma margem, então devemos zera-la*/
+}
+
+.hero{
+    background-image: url(../imagens/bg-3.jpg); /*Aqui a gente teve que alcançar a pasta principal, usando o ../*/
+    height: 500px;
+    background-position: right center; /*Aqui alinha para a direita na vertical e na horizontal ele mantém no centro*/
+    background-size: cover; /*Deixa a imagem ocupando a área toda, mesmo cortando uma parte dela*/
+    border-top: 1px solid transparent; /*Faz com que o o link se apoiasse nele*/
+    /*overflow:auto tem a mesma finalidade do border-top*/
+}
+
+.hero nav ul{
+    text-align: right; /*Como a li esta funcionando como bloco só precisa colocar para a direita*/
+    margin-top:20px;
+    margin-right: 50px;
+}
+
+.hero nav li{
+    display:inline-block;
+    list-style:none;
+    border:1px solid white;
+    margin-left: 10px;
+
+}
+
+.hero nav a{
+    background-color: rgba(0, 0, 0, 0.3);
+    display:block; /*Por padrão, o a é um elemento de linha, logo tem que aplicar esse display*/
+    padding: 15px; 
+    color: white; /*Aqui deixa o texto em branco*/
+    text-decoration: none; /*Aqui tira o sublinhado do link*/
+    text-transform: uppercase;
+    font-size:12px;
+    letter-spacing: 2px;
+}
+.hero nav a:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.titulo{ 
+    text-align: center;
+    color:white;
+    margin-top: 150px;
+ }
+
+ .titulo h1{
+     text-transform: uppercase;
+     font-size: 46px;
+     text-shadow: 3px 3px 2px #333;
+ }
+
+ .titulo p{
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block ;/*por padrão o <p> é um elemento de bloco. logo um inline-block vai fazer com que ele se comporta como elemento de linha, mas com caracteristicas de bloco*/
+  padding: 10px;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+ }
+
+ main{
+     width: 80%;
+     margin: auto;
+ }
+
+ .card{
+  float: left;
+  width: 32%;
+  box-sizing: border-box;
+
+ }
+
+ .card_1, .card_2{
+    margin-right: 2%; /*aqui tem que somar 2*2= 4 e somando com o width do cad tem que dar 100%*/
+
+ }
+ .card img{
+  width: 100%; /*ocupar 100% do espaço*/
+  display:block; /*tranformou em bloco, pois a imagem está funcionando como elemento de linha*/
+ }
+ .card p{
+  background-color: rgb(75, 74, 74);
+  color: white;
+  margin: 0%;
+  padding: 15px;
+ }
+
+ .content-section{
+     background-color: white;
+     padding: 13px;
+     margin-top: 15px;
+     overflow: auto;
+ }
+
+.article{
+    background-color: #ccc;
+    border-bottom: 2px solid #333;
+    /*Essas duas próximas tags ajuda a centralizar o título, fiz a mesma coisa no rodapé*/
+    height: 45px;
+    line-height: 45px;
+}
+
+h2{ /*Zerei a margin top para ficarla em cima*/
+margin-top: 0%;
+}
+
+
+.paragrafo{
+    text-align: left;
+}
+
+
+footer{
+    background-color: #333;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    height: 80px;
+    line-height: 80px;
+}
+
